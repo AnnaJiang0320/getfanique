@@ -3,121 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetFanique | Custom Event Fans Factory - Direct Manufacturer</title>
+    <title>Custom Fans - GetFanique | B2B Wholesale Custom Promotional Fans</title>
+    <meta name="description" content="Custom branded fans for your business. Wholesale, high quality, and global shipping. Get a free quote today at GetFanique.com">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            orange: "#FF5A36",
-                            dark: "#111111",
-                            yellow: "#FFD54F",
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        body { background-color: #111111; color: white; scroll-behavior: smooth; }
-        .hero-gradient { background: radial-gradient(circle at top right, rgba(255,90,54,0.1), transparent); }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541692641319-981cc79ee10a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
     <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10 py-4">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-brand-orange rounded flex items-center justify-center font-black italic shadow-lg">G</div>
-                <span class="text-xl font-black tracking-tighter uppercase italic">GETFANIQUE</span>
-            </div>
-            <div class="hidden md:flex items-center space-x-8 text-[10px] font-black uppercase tracking-widest text-gray-400">
-                <a href="#products" class="hover:text-brand-orange transition">Products</a>
-                <a href="#about" class="hover:text-brand-orange transition">Factory</a>
-                <button class="bg-brand-orange text-white px-6 py-2 rounded-xl hover:shadow-2xl transition uppercase">Get Quote</button>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-orange-600">GetFanique</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#products" class="text-gray-600 hover:text-orange-600 transition">Products</a>
+                    <a href="#features" class="text-gray-600 hover:text-orange-600 transition">Why Us</a>
+                    <a href="#inquiry" class="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition">Get a Quote</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient pt-16 lg:pt-24 pb-24 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-            <div class="lg:col-span-7">
-                <span class="text-brand-orange font-black uppercase tracking-[0.2em] text-[10px] mb-6 block italic underline underline-offset-8">Factory Direct Manufacturer</span>
-                <h1 class="text-6xl lg:text-8xl font-black leading-[0.9] mb-8 tracking-tighter uppercase italic">
-                    Custom Event <br> <span class="text-brand-orange text-7xl lg:text-[7rem]">Fans Factory</span>
-                </h1>
-                <p class="text-xl text-gray-400 mb-12 max-w-xl leading-relaxed italic">
-                    High-impact custom folding fans, clack fans and promotional fans for global concerts, festivals, and brand activations.
-                </p>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12">
-                    <div><p class="text-[10px] font-black uppercase text-gray-500 italic">MOQ From</p><p class="text-xl font-black">100 pcs</p></div>
-                    <div><p class="text-[10px] font-black uppercase text-gray-500 italic">Free Mockup</p><p class="text-xl font-black">24 Hours</p></div>
-                    <div><p class="text-[10px] font-black uppercase text-gray-500 italic">Production</p><p class="text-xl font-black">7-15 Days</p></div>
-                    <div><p class="text-[10px] font-black uppercase text-gray-500 italic">Shipping</p><p class="text-xl font-black">Worldwide</p></div>
-                </div>
-                <div class="flex gap-4">
-                    <a href="#rfq" class="bg-white text-brand-dark px-10 py-5 rounded-2xl font-black uppercase tracking-widest italic hover:bg-gray-200 transition">Get Pricing</a>
-                    <a href="#products" class="border-2 border-white text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest italic hover:bg-white/5 transition">View Catalog</a>
-                </div>
-            </div>
-
-            <!-- RFQ Form -->
-            <div id="rfq" class="lg:col-span-5 sticky top-28">
-                <div class="bg-[#1a1a1a] p-10 rounded-[2.5rem] border border-white/5 shadow-2xl">
-                    <h3 class="text-2xl font-black italic uppercase tracking-tighter mb-8 text-center">Request a Quote</h3>
-                    <form action="https://formspree.io/f/xgobwpep" method="POST" class="space-y-4">
-                        <div class="grid grid-cols-2 gap-4">
-                            <input type="text" name="name" placeholder="Name" required class="bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:ring-2 focus:ring-brand-orange outline-none">
-                            <input type="text" name="company" placeholder="Company" class="bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:ring-2 focus:ring-brand-orange outline-none">
-                        </div>
-                        <input type="email" name="email" placeholder="Business Email" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:ring-2 focus:ring-brand-orange outline-none">
-                        <div class="grid grid-cols-2 gap-4">
-                            <input type="text" name="whatsapp" placeholder="WhatsApp" required class="bg-white/5 border-2 border-brand-orange/30 rounded-xl p-4 text-sm focus:ring-2 focus:ring-brand-orange outline-none">
-                            <input type="text" name="quantity" placeholder="Quantity" required class="bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:ring-2 focus:ring-brand-orange outline-none">
-                        </div>
-                        <textarea name="message" placeholder="Project Details & Deadline..." rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:ring-2 focus:ring-brand-orange outline-none"></textarea>
-                        <button type="submit" class="w-full bg-brand-orange text-white py-5 rounded-2xl font-black text-xl hover:shadow-2xl transition uppercase italic tracking-widest">Get Factory Price</button>
-                    </form>
-                </div>
+    <section class="hero-bg py-24 px-4 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Elevate Your Brand with <br><span class="text-orange-400">Custom Branded Fans</span></h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-200">High-Quality Wholesale Fans. Low MOQ. Worldwide Shipping. Factory Direct Pricing.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#inquiry" class="bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-orange-700 transition shadow-lg">Request Wholesale Price</a>
+                <a href="#products" class="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition shadow-lg">View Catalog</a>
             </div>
         </div>
     </section>
 
-    <!-- Products -->
-    <section id="products" class="py-24 bg-white/5 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl font-black uppercase italic mb-16 tracking-tighter">Event Solutions</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5">
-                    <div class="h-48 bg-white/5 rounded-2xl mb-6"></div>
-                    <h4 class="text-2xl font-black mb-2 italic">Custom Clack Fans</h4>
-                    <p class="text-gray-500 text-sm mb-6 uppercase font-bold tracking-widest">Best for Festivals & Raves</p>
-                    <a href="#rfq" class="text-brand-orange font-black text-xs uppercase underline">Request Pricing →</a>
-                </div>
-                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5">
-                    <div class="h-48 bg-white/5 rounded-2xl mb-6"></div>
-                    <h4 class="text-2xl font-black mb-2 italic">Custom Folding Fans</h4>
-                    <p class="text-gray-500 text-sm mb-6 uppercase font-bold tracking-widest">Best for Corporate Events</p>
-                    <a href="#rfq" class="text-brand-orange font-black text-xs uppercase underline">Request Pricing →</a>
-                </div>
-                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5">
-                    <div class="h-48 bg-white/5 rounded-2xl mb-6"></div>
-                    <h4 class="text-2xl font-black mb-2 italic">Promotional Hand Fans</h4>
-                    <p class="text-gray-500 text-sm mb-6 uppercase font-bold tracking-widest">Best for Marketing Campaigns</p>
-                    <a href="#rfq" class="text-brand-orange font-black text-xs uppercase underline">Request Pricing →</a>
-                </div>
+    <!-- Inquiry Form -->
+    <section id="inquiry" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50 p-8 rounded-2xl shadow-inner">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold">Get a Wholesale Quote</h2>
+                <p class="text-gray-600 mt-2">Fill out the form below and our sales team will contact you within 24 hours.</p>
             </div>
+            
+            <form action="https://formspree.io/f/xgobwpep" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="name" required class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Business Email</label>
+                        <input type="email" name="email" required class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-white">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Your Requirements</label>
+                    <textarea name="message" rows="4" required class="mt-1 block w-full px-4 py-3 rounded-lg border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 bg-white" placeholder="Tell us more about your needs..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-orange-700 transition shadow-lg">Send Inquiry Now</button>
+            </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 border-t border-white/10 text-center text-gray-600 text-[10px] font-black uppercase tracking-[0.4em] italic">
-        © 2026 GetFanique Manufacturing • Crowd Engagement Specialists
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <span class="text-2xl font-bold text-orange-500">GetFanique</span>
+        <p class="text-gray-400 mt-2">© 2026 GetFanique Custom Fans. All rights reserved.</p>
     </footer>
 
 </body>
