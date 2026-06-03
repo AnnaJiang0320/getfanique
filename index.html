@@ -3,43 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetFanique | Custom Festival & Event Fans Manufacturer</title>
+    <title>GetFanique | Custom Event Fans Factory & Wholesale</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #111111; color: #ffffff; }
-        .bg-dark-card { background-color: #1a1a1a; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #111111; color: #ffffff; }
+        .bg-brand-dark { background-color: #111111; }
         .text-brand-orange { color: #FF5A36; }
         .bg-brand-orange { background-color: #FF5A36; }
-        .hero-gradient { background: linear-gradient(180deg, rgba(17,17,17,0) 0%, #111111 100%), url('https://images.unsplash.com/photo-1531050171651-a30f5d63bb6d?auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center; }
+        .border-brand-orange { border-color: #FF5A36; }
+        .italic-bold { font-weight: 900; font-style: italic; }
+        .hero-banner {
+            background: linear-gradient(180deg, rgba(17,17,17,0) 0%, #111111 100%),
+                        url('https://sc02.alicdn.com/kf/A63cbcba391c94532bc13a0fb09683a4eo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #FF5A36;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(255,90,54,0.3);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            background-color: #ff6a4d;
+        }
     </style>
 </head>
-<body class="font-sans antialiased">
-    <nav class="border-b border-gray-800 bg-[#111111]/80 backdrop-blur-md sticky top-0 z-50 h-20 flex justify-between items-center px-4 max-w-7xl mx-auto">
-        <span class="text-2xl font-black italic uppercase">GET<span class="text-brand-orange">FANIQUE</span></span>
-        <a href="#inquiry" class="bg-brand-orange text-white px-6 py-2 rounded-full font-bold uppercase text-xs tracking-widest hover:opacity-90 transition">Get Quote</a>
+<body class="antialiased">
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/your_number_here" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#111111]/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl italic-bold tracking-tighter uppercase">GET<span class="text-brand-orange">FANIQUE</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-[10px] italic-bold uppercase tracking-[0.2em] text-gray-400">
+                <a href="#products" class="hover:text-brand-orange transition">Products</a>
+                <a href="#process" class="hover:text-brand-orange transition">Process</a>
+                <a href="#factory" class="hover:text-brand-orange transition">Factory</a>
+                <a href="#quote" class="bg-brand-orange text-white px-8 py-3 rounded-xl hover:shadow-2xl transition duration-300">GET QUOTE</a>
+            </div>
+        </div>
     </nav>
-    <section class="relative h-[70vh] flex items-center justify-center text-center px-4 hero-gradient">
-        <div class="max-w-4xl">
-            <h1 class="text-5xl md:text-7xl font-black mb-6 uppercase">Premium <span class="text-brand-orange">Custom Fans</span></h1>
-            <p class="text-xl text-gray-400 mb-10 italic">Low MOQ 100pcs. Fast Global Delivery.</p>
-            <a href="#inquiry" class="bg-brand-orange text-white px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition transform inline-block">Request Wholesale Price</a>
+
+    <!-- Hero -->
+    <section class="relative min-h-[85vh] flex items-center justify-center text-center px-4 hero-banner">
+        <div class="max-w-5xl">
+            <div class="inline-flex items-center gap-3 bg-white/5 px-5 py-2 rounded-full mb-8 border border-white/10">
+                <span class="flex h-2 w-2 rounded-full bg-brand-orange animate-pulse"></span>
+                <span class="text-[10px] italic-bold uppercase tracking-[0.2em] text-gray-400">Direct Event Fan Manufacturer</span>
+            </div>
+            <h1 class="text-6xl md:text-[5.5rem] italic-bold leading-[0.9] mb-8 tracking-tighter uppercase">
+                Custom Event <br />
+                <span class="text-brand-orange">Fans Factory</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium italic">
+                Factory direct manufacturing for global concerts, festivals, and high-impact brand activations. Fast delivery, premium quality.
+            </p>
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <div class="text-center">
+                    <p class="text-[10px] italic-bold uppercase tracking-widest text-gray-500 mb-1">MOQ FROM</p>
+                    <p class="text-2xl italic-bold">100 PCS</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[10px] italic-bold uppercase tracking-widest text-gray-500 mb-1">PRODUCTION</p>
+                    <p class="text-2xl italic-bold">7-15 DAYS</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[10px] italic-bold uppercase tracking-widest text-gray-500 mb-1">SHIPPING</p>
+                    <p class="text-2xl italic-bold">WORLDWIDE</p>
+                </div>
+            </div>
+            <a href="#quote" class="inline-block bg-white text-brand-dark px-16 py-6 rounded-2xl italic-bold text-lg hover:shadow-2xl hover:-translate-y-1 transition duration-300 uppercase tracking-widest text-black">
+                Get Factory Pricing
+            </a>
         </div>
     </section>
-    <section id="inquiry" class="py-24 bg-dark-card border-y border-white/5">
-        <div class="max-w-xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-black mb-8 uppercase italic italic">Get a <span class="text-brand-orange">Quote</span></h2>
-            <form action="https://formspree.io/f/xgobwpep" method="POST" class="space-y-4">
-                <input type="text" name="name" placeholder="Full Name" required class="w-full bg-[#111111] border border-white/10 rounded-xl px-6 py-4 outline-none text-white focus:border-brand-orange">
-                <input type="email" name="email" placeholder="Business Email" required class="w-full bg-[#111111] border border-white/10 rounded-xl px-6 py-4 outline-none text-white focus:border-brand-orange">
-                <textarea name="message" rows="4" placeholder="Order quantity & requirements..." required class="w-full bg-[#111111] border border-white/10 rounded-xl px-6 py-4 outline-none text-white focus:border-brand-orange"></textarea>
-                <button type="submit" class="w-full bg-brand-orange text-white py-5 rounded-xl font-black uppercase italic tracking-widest hover:opacity-90 transition">Send Inquiry</button>
+
+    <!-- Products -->
+    <section id="products" class="py-32 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-5xl lg:text-7xl italic-bold uppercase tracking-tighter leading-none mb-6">Crowd <br><span class="text-brand-orange">Engagement</span></h2>
+                    <p class="text-gray-400 font-medium text-lg italic">Engineered for visibility. Built for high-energy events.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Product 1 -->
+                <div class="group bg-[#1a1a1a] p-2 rounded-[2.5rem] border border-white/5 hover:border-brand-orange/30 transition duration-500">
+                    <div class="h-80 bg-white/5 rounded-[2rem] overflow-hidden mb-8 relative">
+                        <img src="https://sc02.alicdn.com/kf/A5997abec01d84ebba65a68cd47af3761t.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-brand-orange text-white text-[10px] italic-bold uppercase px-3 py-1 rounded-md shadow-lg">MOQ 100 PCS</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-10">
+                        <h3 class="text-3xl italic-bold mb-4 tracking-tighter uppercase">Clack Fans</h3>
+                        <p class="text-xs italic-bold text-gray-500 uppercase tracking-widest leading-relaxed mb-8">
+                            Durable Fabric + Heavy Plastic<br>High-impact sound & visuals
+                        </p>
+                        <a href="#quote" class="block text-center border-2 border-white text-white py-4 rounded-2xl italic-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black transition">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group bg-[#1a1a1a] p-2 rounded-[2.5rem] border border-white/5 hover:border-brand-orange/30 transition duration-500">
+                    <div class="h-80 bg-white/5 rounded-[2rem] overflow-hidden mb-8 relative">
+                        <img src="https://sc02.alicdn.com/kf/A21acb3d2af9a48db8d50b5f70874f1397.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-brand-orange text-white text-[10px] italic-bold uppercase px-3 py-1 rounded-md shadow-lg">MOQ 100 PCS</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-10">
+                        <h3 class="text-3xl italic-bold mb-4 tracking-tighter uppercase">Folding Fans</h3>
+                        <p class="text-xs italic-bold text-gray-500 uppercase tracking-widest leading-relaxed mb-8">
+                            Bamboo & Silk Craftsmanship<br>Premium Luxury Feel
+                        </p>
+                        <a href="#quote" class="block text-center border-2 border-white text-white py-4 rounded-2xl italic-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black transition">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group bg-[#1a1a1a] p-2 rounded-[2.5rem] border border-white/5 hover:border-brand-orange/30 transition duration-500">
+                    <div class="h-80 bg-white/5 rounded-[2rem] overflow-hidden mb-8 relative">
+                        <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000">
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-brand-orange text-white text-[10px] italic-bold uppercase px-3 py-1 rounded-md shadow-lg">MOQ 100 PCS</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-10">
+                        <h3 class="text-3xl italic-bold mb-4 tracking-tighter uppercase">Festival Fans</h3>
+                        <p class="text-xs italic-bold text-gray-500 uppercase tracking-widest leading-relaxed mb-8">
+                            Full Color Custom Printing<br>Budget-Friendly Activations
+                        </p>
+                        <a href="#quote" class="block text-center border-2 border-white text-white py-4 rounded-2xl italic-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black transition">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RFQ Form -->
+    <section id="quote" class="py-32 bg-[#1a1a1a] border-y border-white/5">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl italic-bold uppercase tracking-tighter mb-4">Get a <span class="text-brand-orange">Quote</span></h2>
+                <p class="text-gray-500 italic-bold uppercase tracking-widest text-xs">Factory Response within 12h</p>
+            </div>
+            <form action="https://formspree.io/f/xgobwpep" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" name="name" placeholder="Full Name" required class="w-full bg-brand-dark border border-white/10 rounded-2xl p-5 focus:border-brand-orange outline-none transition font-bold text-white">
+                    <input type="text" name="company" placeholder="Company Name" class="w-full bg-brand-dark border border-white/10 rounded-2xl p-5 focus:border-brand-orange outline-none transition font-bold text-white">
+                </div>
+                <input type="email" name="email" placeholder="Business Email" required class="w-full bg-brand-dark border border-white/10 rounded-2xl p-5 focus:border-brand-orange outline-none transition font-bold text-white">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" name="whatsapp" placeholder="WhatsApp Number" class="w-full bg-brand-dark border-2 border-brand-orange/30 rounded-2xl p-5 focus:border-brand-orange outline-none transition font-bold text-white">
+                    <input type="number" name="quantity" placeholder="Quantity (Min 100)" required class="w-full bg-brand-dark border border-white/10 rounded-2xl p-5 focus:border-brand-orange outline-none transition font-bold text-white">
+                </div>
+                <textarea name="message" rows="4" placeholder="Your requirements & delivery deadline..." required class="w-full bg-brand-dark border border-white/10 rounded-2xl p-5 focus:border-brand-orange outline-none transition font-bold text-white"></textarea>
+                <button type="submit" class="w-full bg-brand-orange text-white py-6 rounded-2xl italic-bold text-xl uppercase tracking-widest hover:shadow-[0_20px_50px_rgba(255,90,54,0.3)] hover:-translate-y-1 transition-all duration-300">
+                    Send Inquiry Now
+                </button>
             </form>
         </div>
     </section>
-    <footer class="py-12 text-center text-gray-600 text-xs">
-        <span class="font-black italic text-white">GET<span class="text-brand-orange">FANIQUE</span></span>
-        <p class="mt-2 uppercase tracking-widest italic">Global Export Partner Since 2018</p>
+
+    <!-- Footer -->
+    <footer class="py-24 text-center bg-brand-dark">
+        <span class="text-3xl italic-bold tracking-tighter uppercase">GET<span class="text-brand-orange">FANIQUE</span></span>
+        <div class="mt-8 flex justify-center gap-10 text-[10px] italic-bold uppercase tracking-widest text-gray-600">
+            <span>© 2026 FACTORY DIRECT</span>
+            <span>GLOBAL EXPORT PARTNER</span>
+            <span>MOQ 100 PCS</span>
+        </div>
     </footer>
+
 </body>
 </html>
